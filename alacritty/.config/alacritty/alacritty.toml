@@ -1,0 +1,12 @@
+general.import = ["~/.config/alacritty/one_light.toml"]
+
+[font.normal]
+family = "FiraCode Nerd Font"
+
+[cursor]
+[cursor.style]
+shape = "Beam"
+
+[window]
+decorations = "None"
+opacity = 0.7

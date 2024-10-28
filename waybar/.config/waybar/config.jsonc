@@ -1,0 +1,77 @@
+// -*- mode: jsonc -*-
+{
+    "layer": "top", // Waybar at top layer
+    // "position": "bottom", // Waybar position (top|bottom|left|right)
+    "height": 25, // Waybar height (to be removed for auto height)
+    // "width": 1280, // Waybar width
+    "spacing": 6, // Gaps between modules (4px)
+    // Choose the order of the modules
+
+    "modules-left": [
+        "hyprland/workspaces",
+    ],
+    "modules-center": [
+	"clock",
+    ],
+    "modules-right": [
+	"wireplumber",
+        "network",
+        "battery",
+	"tray",
+    ],
+
+    "keyboard-state": {
+        "numlock": true,
+        "capslock": true,
+        "format": "{name} {icon}",
+        "format-icons": {
+            "locked": "",
+            "unlocked": ""
+        }
+    },
+
+    "clock": {
+        // "timezone": "America/New_York",
+	"format": "{:%R, %d %B %Y} ",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+
+    "battery": {
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-full": "{icon} {capacity}%",
+	"format-charging": "󰂄 {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{time}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+	"format-icons": ["󰂎", "󰁻", "󰁽", "󰁿", "󰂁", "󰁹"]
+    },
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": " ",
+        "format-ethernet": "  {ipaddr}/{cidr}",
+        "tooltip-format": "  {ifname} via {gwaddr}",
+        "format-linked": "  {ifname} (No IP)",
+        "format-disconnected": "⚠ Disconnected",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+    "wireplumber": {
+    "format": "{icon} {volume}%",
+    "format-muted": "",
+    "on-click": "helvum",
+    "format-icons": ["", "", ""]
+    },
+    "tray": {
+	"spacing": 10,
+    },
+    "margin-top": 20,
+    "margin-bottom": -10,
+    "margin-left": 20,
+    "margin-right": 20,
+}
