@@ -1,5 +1,3 @@
-ls
-mkdir iSSG
 cd iSSG/
 ls
 python3 -m venv venv
@@ -496,5 +494,8 @@ hyprswitch simple
 cd hypr
 nvim
 reboot
+exit
+exit
+fd *.pdf
 exit
 exit
