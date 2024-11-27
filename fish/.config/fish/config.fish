@@ -11,6 +11,6 @@ if status is-interactive
     set -U fish_user_paths ~/.local/bin $fish_user_paths
     function backup
     	git add .
-        git commit -m (date +%Y-%m)
+        git commit -m (date +%Y-%m-%d)
     end
 end
