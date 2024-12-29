@@ -3,6 +3,7 @@ if status is-interactive
     alias cd=z
     alias pyactivate=". venv/bin/activate.fish"
     alias em="emacs -nw"
+    alias et="emacsclient -a \"\" -t"
     zoxide init fish | source
     fzf --fish | source
     set -x EDITOR nvim

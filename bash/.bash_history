@@ -499,3 +499,6 @@ exit
 fd *.pdf
 exit
 exit
+ls
+source venv/bin/activate
+exit
