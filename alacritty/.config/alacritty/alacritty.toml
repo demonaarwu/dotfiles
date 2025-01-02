@@ -1,5 +1,8 @@
 general.import = ["~/.config/alacritty/one_light.toml"]
 
+
+[font]
+size = 7.0
 [font.normal]
 family = "Sarasa Mono TC Nerd"
 
@@ -8,5 +11,6 @@ family = "Sarasa Mono TC Nerd"
 # shape = "Beam"
 
 [window]
-decorations = "None"
+# decorations = "None"
 # opacity = 0.7
+

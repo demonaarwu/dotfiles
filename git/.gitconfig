@@ -1,0 +1,5 @@
+[user]
+	name = Aaron Wu
+	email = demonaarwu@tuta.io
+[core]
+	editor = nvim
