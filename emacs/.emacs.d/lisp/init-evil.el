@@ -27,7 +27,7 @@
   (aaw-leader-def
     :keymaps 'normal
     "ff" 'counsel-find-file
-    "fp" 'project-find-file
+    "fp" 'find-file-in-project
     "tt" 'open-vterm
     "sb" 'counsel-switch-buffer
     "rg" 'counsel-rg
@@ -36,6 +36,7 @@
     "ot" 'org-todo
     "oc" 'org-capture
     "oj" 'org-metaup
+    "od" 'org-journal-new-entry
     "ok" 'org-priority-down
     "0" 'winum-select-window-0
     "1" 'winum-select-window-1

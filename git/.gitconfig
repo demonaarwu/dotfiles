@@ -3,3 +3,5 @@
 	email = demonaarwu@tuta.io
 [core]
 	editor = nvim
+[init]
+	defaultBranch = main

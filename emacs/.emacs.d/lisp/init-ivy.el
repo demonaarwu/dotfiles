@@ -14,5 +14,8 @@
 (use-package counsel
   :ensure t)
 
+(use-package find-file-in-project
+  :ensure t)
+
 (provide 'init-ivy)
 ;; init-ivy.el ends here

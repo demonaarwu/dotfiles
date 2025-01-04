@@ -35,5 +35,11 @@
 
 (add-to-list 'org-capture-templates aaw-habit-tracker)
 
+(use-package org-journal
+  :ensure t
+  :init
+  (setq org-journal-dir "~/org/journal")
+  (setq org-journal-file-type 'weekly))
+
 (provide 'init-org)
 ;; init-org.el ends here
