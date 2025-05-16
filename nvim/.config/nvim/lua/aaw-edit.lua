@@ -27,7 +27,7 @@ require("nvim-treesitter.configs").setup({
 require("nvim-autopairs").setup()
 
 require("nvim_comment").setup()
-map("n", "<leader>gc", ":CommentToggle<CR>")
+map("n", "M-;", ":CommentToggle<CR>")
 
 require("colorizer").setup({
     filetypes = {'*'},

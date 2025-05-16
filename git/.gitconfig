@@ -2,6 +2,7 @@
 	name = Aaron Wu
 	email = demonaarwu@tuta.io
 [core]
-	editor = nvim
+	editor = emacs
+	excludesFile = ~/.gitignore
 [init]
 	defaultBranch = main

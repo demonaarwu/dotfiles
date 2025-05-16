@@ -502,3 +502,67 @@ exit
 ls
 source venv/bin/activate
 exit
+emacs-lsp-booster 
+exit
+astyle -rn --style=allman *.cpp
+exit
+source venv/bin/activate
+echo $PYTHONPATH
+exit
+source venv/bin/activate
+pip3 install pyqt6
+emacs app.py
+python3 app.py
+vim app.py
+nvim app.py 
+python3 app.py 
+source venv/bin/activate
+nvim app.py 
+python3 app.py 
+nvim app.py 
+python3 app.py 
+nvim app.py 
+nvim app.py 
+python3 app.py 
+nvim app.py 
+python3 app.py 
+nvim app.py 
+python3 app.py 
+nvim app.py 
+python3 app.py 
+nvim app.py 
+python3 app.py 
+python3 app.py 
+nvim app.py 
+python3 app.py 
+nvim app.py 
+python3 app.py 
+nvim app.py 
+python3 app.py 
+nvim app.py 
+python3 app.py 
+nvim app.py 
+python3 app.py 
+nvim app.py 
+ls
+mkdir 3
+cp ~/Pictures/老八.JPG 3/
+python3 app.py 
+nvim push_button.py
+python3 push_button.py 
+nvim text_edit.py
+python3 text_edit.py 
+nvim check_box.py
+python3 check_box.py 
+nvim combobox.py
+python3 combobox.py 
+nvim signal_slots.py
+python3 signal_slots.py 
+nvim hbox.py
+python3 hbox.py 
+cp hbox.py vbox.py
+nvim vbox.py 
+python3 vbox.py 
+echo pinokio
+echo pinokio
+ls

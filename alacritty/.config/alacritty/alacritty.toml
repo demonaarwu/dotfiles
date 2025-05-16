@@ -2,9 +2,9 @@ general.import = ["~/.config/alacritty/one_light.toml"]
 
 
 [font]
-size = 7.0
+size = 10.0
 [font.normal]
-family = "Sarasa Mono TC Nerd"
+family = "JetBrains Mono Nerd Font"
 
 [cursor]
 [cursor.style]

@@ -17,3 +17,6 @@ PS1='[\u@\h \W]\$ '
 eval "$(fzf --bash)"
 eval "$(zoxide init bash)"
 alias cd=z
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/home/demonaarwu/.lmstudio/bin"

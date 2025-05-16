@@ -7,5 +7,3 @@ require("aaw-completion")
 require("aaw-edit")
 require("aaw-telescope")
 require("aaw-theme")
-
--- require("aaw-org")

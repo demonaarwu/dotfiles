@@ -1,9 +1,21 @@
--- aaw-completion.lua -- Configuration for LSP
+local cmp = require('cmp')
 
-require("mason").setup()
-
-require("inc_rename").setup()
-map("n", "<leader>rn", ":IncRename ")
+cmp.setup({
+    mapping = cmp.mapping.preset.insert({
+	["<C-b>"] = cmp.mapping.scroll_docs(-4),
+	["<C-f>"] = cmp.mapping.scroll_docs(4),
+	["<C-Space>"] = cmp.mapping.complete(),
+	["<C-e>"] = cmp.mapping.abort(),
+	["<S-Tab>"] = cmp.mapping.select_prev_item(),
+	["<Tab>"] = cmp.mapping.select_next_item(),
+	["<CR>"] = cmp.mapping.confirm({ select = true ,    
+	behavior = cmp.ConfirmBehavior.Replace,}), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+    }),
+    sources = cmp.config.sources({
+	{ name = "nvim_lsp" },
+	{ name = "path" },
+    })
+})
 
 local servers = {
     "pyright",
@@ -17,7 +29,7 @@ local servers = {
     "racket_langserver",
 }
 
-local capabilities = require('blink.cmp').get_lsp_capabilities()
+local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 for _, server in ipairs(servers) do
     require("lspconfig")[server].setup({
